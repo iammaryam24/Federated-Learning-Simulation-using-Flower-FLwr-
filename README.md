@@ -71,39 +71,6 @@ This project implements a federated learning simulation using the **Flower (FLwr
 | **Centralized Baseline** | Traditional ML training for performance comparison |
 | **Single File Option** | Full working code available in one Python file |
 
----
-
-## System Architecture
-
-### High-Level Architecture
-┌──────────────────────────┐
-│ FLOWER SERVER │
-│ (server.py) │
-│ │
-│ • FedAvg Strategy │
-│ • Client Manager │
-│ • Evaluation Engine │
-│ Port: 0.0.0.0:8080 │
-└──────────┬───────────────┘
-│
-gRPC Protocol (Protobuf)
-│
-┌───────────────┴───────────────┐
-│ │
-┌──────┴──────┐ ┌──────┴──────┐
-│ CLIENT 0 │ │ CLIENT 1 │
-│ │ │ │
-│ Train: 575 │ │ Train: 574 │
-│ Val: 144 │ │ Val: 144 │
-│ │ │ │
-│ MLP Model │ │ MLP Model │
-│ 64 → 32 │ │ 64 → 32 │
-│ │ │ │
-│ DATA LOCAL │ │ DATA LOCAL │
-└─────────────┘ └─────────────┘
-
-text
-
 ### Communication Flow (One Round)
 
 1. Server sends global model weights to all clients
