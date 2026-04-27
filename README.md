@@ -86,23 +86,37 @@ This project implements a federated learning simulation using the **Flower (FLwr
 ## Project Structure
 federated-learning-flower/
 ├── src/
+
 │ ├── init.py # Package initialization
+
 │ ├── model.py # MLP neural network model
+
 │ ├── data_loader.py # Data loading & partitioning
+
 │ ├── client.py # Flower client implementation
+
 │ ├── server.py # Flower server with FedAvg
+
 │ ├── centralized.py # Centralized training baseline
+
 │ ├── utils.py # Utility functions
+
 │ └── plot_results.py # Visualization & comparison
+
 ├── results/ # Generated outputs
+
 ├── tests/ # Unit tests
+
 ├── documentation/ # Project documentation
+
 ├── federated_learning.py # Single-file implementation
+
 ├── requirements.txt # Dependencies
+
 ├── README.md # This file
+
 └── .gitignore # Git ignore rules
 
-text
 
 ---
 
@@ -172,15 +186,19 @@ text
 ## 📁 Project Structure
 src/
 ├── model.py # MLP model
+
 ├── data_loader.py # Data handling
+
 ├── client.py # Flower client
+
 ├── server.py # Flower server
+
 ├── centralized.py # Baseline
+
 └── plot_results.py # Visualization
+
 federated_learning.py # Single-file version
 requirements.txt # Dependencies
-
-text
 
 ---
 
